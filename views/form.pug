@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1 Create New Post
+  form(method="POST" action="/new")
+    div(class="input-container")
+      div(class="input-element")
+        span Your name:
+        input(type="text" name="user" required)
+      div(class="input-element")
+        span Your message:
+        input(type="text" name="message" required)
+    button(type="submit") Create Message

@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+  each message in messages
+    div(class="message") 
+      p(class="text") #{message.text}
+      p 
+        | Written by !{" "}
+        span(class="user") #{message.user}
+        | !{" "} on !{" "}
+        span(class="date") #{message.added}
+  a(href="/new") 
+    button(type="button") Create New Post
+        
+    

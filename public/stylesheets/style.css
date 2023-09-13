@@ -1,0 +1,39 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00b7ff;
+}
+
+.message {
+  border: 1px solid black;
+  margin: 2rem;
+}
+
+.message > p {
+  padding-left: 2rem;
+}
+
+.message > p.text {
+  color: blue;
+}
+
+.message .user,
+.message .date,
+.message .text {
+  font-weight: 900;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+div.input-element span {
+  min-width: 10%;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
